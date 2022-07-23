@@ -1,0 +1,220 @@
+body{
+    background: #000000;
+}
+
+hr{
+    color: #CAD5E2;
+    margin-left: 20px;
+    margin-right: 20px ;
+}
+
+nav {
+    float: right;
+    margin-top: 5px;
+    padding-right: 40px;
+    padding-top: 15px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 5px;
+    border-bottom: 1px solid #CAD5E2;
+    background-color: #333;
+}
+
+nav a{
+    text-decoration: none;
+    padding-left: 35px;
+    overflow: hidden;
+    vertical-align: middle;
+    padding-top: 30px;
+}
+
+.intro{
+    display: inline-flex;
+    padding-left: 15px;
+    overflow-x: hidden;
+}
+
+.intro .text{
+    color: #8D3DAF;
+    font-family: 'Quicksand', sans-serif;
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-top: 20px;
+    width: 800px;
+    font-size: 22px;
+}
+
+.intro img {
+    width: 450px;
+    height: 600px;
+    margin: 15px;
+    padding-right: 25px;
+}
+
+.Projects{
+    margin-top: 100px;
+}
+
+
+.container .text{
+    max-height: fit-content;
+    text-align: center;
+    color: #CAD5E2;
+    max-width: 1300px;
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 5px;
+    margin-top: 150px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Projects .Project{
+    background-color: #000000;
+    width: 350px;
+    height: 250px;
+    border: 7px solid #8D3DAF;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-right: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.Project .num{
+    background-color: #333;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+
+.Project span{
+    color: white;
+    font-weight: 50px;
+}
+
+.Project a{
+    text-decoration: none;
+}
+
+.Project div{
+    padding-left: 25px;
+    padding-top: 30px;
+}
+
+.contact{
+    margin-top: 550px;
+    margin-bottom: 75px;
+}
+
+.container-1 {
+    font-family: 'Georgia',cursive;
+    font-style: italic;
+    font-weight: 200px;
+    line-height: 80px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    width: 600px;
+    float: left;
+    padding-left: 50px;
+}
+
+.container-2 h1{
+    color: #8D3DAF;
+    padding-top: 90px;
+    padding-left: 50px;
+}
+
+.contact{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: rgb(28, 27, 27);
+    border-radius: 10px;
+}
+
+.contact h1{
+    color:#8D3DAF;
+    text-align: center;
+    margin: auto;
+}
+
+.contact .s-media{
+    text-align: center;
+    padding-top: 50px;
+}
+.contact i{
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.contact .g-form h1{
+    text-align: center;
+    color:#8D3DAF;
+    padding-top: 20px;
+}
+
+.contact .g-form a{
+    font-size: 30px;
+    color: #CAD5E2;
+    padding-top: 25px;
+    padding-left: 240px;
+}
+
+@media only screen and (max-width:800px){
+    body {
+        background-color: black;
+    }
+
+    nav {
+        border: 2px solid #333;
+        border-radius: 5px;
+        padding: 5px;
+        border-bottom: 1px solid #CAD5E2;
+        background-color: #333;
+        float: none;
+        position: absolute;
+        width: 400px;
+        top: 50px;
+        left: 1100px;
+        transform: translate(-50%, -50%);
+    }
+
+    .intro{
+        margin-top: 50px;
+    }
+    .intro img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container .text{
+        width: 1250px;
+        margin-right: 25px;
+        margin-top: 175px;
+    }
+
+    .Projects .Project{
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 600px;
+        height: 300px;
+    }
+    .Projects{
+        padding-left: 350px;
+        margin-top: 5px;
+    }
+    .contact{
+        margin-top: 1100px;
+        width: 1250px;
+        margin-bottom: 50px;
+    }
+}
