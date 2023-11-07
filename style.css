@@ -10,30 +10,6 @@
 
 
 /* 
-@media only screen and (max-width: 720px) {
-    .projects-card {
-        display: flex;
-        flex-direction: column;
-        row-gap: 1.5em;
-    }
-
-    .what-i-know-cards {
-        display: flex;
-        flex-direction: column;
-        row-gap: 1.5em;
-    }
-
-    .what-i-know-card {
-        width: fit-content;
-    }
-
-    .intro-container {
-        background-image: url(/images/small_bg.png);
-        background-size: cover;
-        background-position: center;
-    }
-}
-
 @media screen and (max-width: 720px) {
     .navbar-section:not(:first-child) {
         display: none;

@@ -1,0 +1,53 @@
+/* CSS design for small screen sizes or for phone screen sizes */
+@media only screen and (max-width: 720px) {
+    .navbar{
+        position: fixed;
+        overflow: hidden;    
+    }
+
+    .navbar .navbar-section:not(:first-child){
+        display: none;
+    }
+
+    a.icon {
+        float: right;
+        display: block;
+      }
+}
+
+@media screen and (max-width: 720px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+/* End */
+
+/* .projects-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+}
+
+.what-i-know-cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5em;
+}
+
+.what-i-know-card {
+    width: fit-content;
+}
+
+.intro-container {
+    background-image: url(/images/small_bg.png);
+    background-size: cover;
+    background-position: center;
+} */

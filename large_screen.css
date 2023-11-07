@@ -12,6 +12,10 @@
         overflow: hidden;
     }
 
+    .responsive-link{
+        display: none;
+    }
+
     .logo {
         text-align: left;
     }
