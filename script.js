@@ -1,5 +1,10 @@
-// alert("Under Construction.....")
+alert("Under Construction.....")
 
-// document.querySelector('.hamburger-icon').addEventListener('click', function() {
-//     this.parentElement.classList.toggle('active');
-// });
+function myFunction() {
+    var x = document.getElementById("myNavBar");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+  }
