@@ -15,7 +15,7 @@
 
 <body>
     <!-- nav bar starting -->
-    <nav class="navbar" id="myNavBar">
+    <nav class="navbar">
         <div class="navbar-section logo"><span>DS</span></div>
         <div class="navbar-section nav-tabs">
             <ul class="tabs-list">
@@ -43,13 +43,20 @@
             </div>
             <!-- </button> -->
         </div>
-        <a href="#home" class="active responsive-link">Home</a>
-        <a href="#news" class="responsive-link">News</a>
-        <a href="#contact" class="responsive-link">Contact</a>
-        <a href="#about" class="responsive-link">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+        <div class="small-navbar" id="smallNav">
+            <div class="hidden"></div>
+            <div class="responsive-links" id="myNavBar">
+                <a href="#home" class="active responsive-link">Home</a>
+                <a href="#news" class="responsive-link">News</a>
+                <a href="#contact" class="responsive-link">Contact</a>
+                <a href="#about" class="responsive-link">About</a>    
+            </div>
+            <div class="ham-burger">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>       
     </nav>
     <!-- nav bar ending -->
 
