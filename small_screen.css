@@ -11,6 +11,8 @@
     .navbar{
         display: grid;
         grid-template-columns: 50% 50%;
+        padding: 3vh 2vw;
+        background-color: #d9d9d9;
     }
 
     .small-navbar{
@@ -20,6 +22,10 @@
 
     .ham-burger{
         text-align: right;
+    }
+
+    .icon{
+        color: black;
     }
 }
 
