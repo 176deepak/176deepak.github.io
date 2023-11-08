@@ -33,6 +33,7 @@
     .small-navbar.on{
         display: grid;
         grid-template-columns: auto auto auto;
+        height: 100vh;
     } 
     .responsive-links.on{
         display:flex;
