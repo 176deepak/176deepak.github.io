@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,62 +7,66 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="large_screen.css">
-    <link rel="stylesheet" href="small_screen.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat&family=Nunito:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="large_screen.css">
+    <link rel="stylesheet" href="medium_screen.css">
+    <link rel="stylesheet" href="small_screen.css"> -->
     <script src="script.js"></script>
 </head>
-
 <body>
     <!-- nav bar starting -->
-    <nav class="navbar">
-        <div class="navbar-section logo"><span>DS</span></div>
-        <div class="navbar-section nav-tabs">
-            <ul class="tabs-list">
-                <li class="nav-tab-link">
-                    <a href="#about">About me</a>
-                </li>
-                <li class="nav-tab-link">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="nav-tab-link">
-                    <a href="https://medium.com/@deepaksainiofficial17" target="_blank">Articles</a>
-                </li>
-                <li class="nav-tab-link">
-                    <a href="https://drive.google.com/file/d/1ekSaFxtyVnyAIiYj2Q9C3-Grl74MUp35/view?usp=sharing" target="_blank">Resume</a>
-                </li>
-            </ul>
-        </div>
-        <div class="navbar-section nav-contact">
-            <!-- <button class="contact-button"> -->
-            <div class="contact-button">
-                <a href="tel:+917023892505" onmouseover="this.style.color='white';"
-                onmouseout="this.style.color='black';">
-                Contact &rarr;
-            </a>
+    <nav class="navBar" id="topNavBar">
+        <!-- logo DS -->
+        <div class="navBarSection logo"><span>DS</span></div>
+        <!-- navbar for large screens -->
+        <div class="navBarSection largeNavBar" id="largeNavigation">
+            <div class="largeNavTabs">
+                <ul class="largeTabsList">
+                    <li class="navTabLink">
+                        <a href="#about">About me</a>
+                    </li>
+                    <li class="navTabLink">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="navTabLink">
+                        <a href="https://medium.com/@deepaksainiofficial17" target="_blank">Articles</a>
+                    </li>
+                    <li class="navTabLink">
+                        <a href="https://drive.google.com/file/d/1ekSaFxtyVnyAIiYj2Q9C3-Grl74MUp35/view?usp=sharing" target="_blank">Resume</a>
+                    </li>
+                </ul>
             </div>
-            <!-- </button> -->
-        </div>
-        <div class="small-navbar" id="smallNav">
-            <!-- <div class="hidden"></div> -->
-            <div class="ham-burger">
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+            <div class="navBarSection navContact">
+                <!-- <button class="contact-button"> -->
+                <div class="contactButton">
+                    <a href="tel:+917023892505">
+                    Contact &rarr;
                 </a>
+                </div>
+                <!-- </button> -->
             </div>
-        </div>    
-        <div class="responsive-links" id="myNavBar">
-            <a href="#about" class="active responsive-link">About me</a>
-            <a href="#projects" class="responsive-link">Projects</a>
-            <a href="https://medium.com/@deepaksainiofficial17" target="_blank" class="responsive-link">Articles</a>
-            <a href="https://drive.google.com/file/d/1ekSaFxtyVnyAIiYj2Q9C3-Grl74MUp35/view?usp=sharing" target="_blank" class="responsive-link">Resume</a>  
-            <a href="tel:+917023892505" class="responsive-link">Contact</a>    
+        </div>
+        <!-- navbar for small and midium screens -->
+        <div class="sNBhamBurger navBarSection">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="smallNavbar navBarSection" id="myNavBar">
+            <a href="#about" class="active sNBLink">About me</a><br/>
+            <a href="#projects" class="sNBLink">Projects</a><br/>
+            <a href="https://medium.com/@deepaksainiofficial17" target="_blank" class="sNBLink">Articles</a><br/>
+            <a href="https://drive.google.com/file/d/1ekSaFxtyVnyAIiYj2Q9C3-Grl74MUp35/view?usp=sharing" target="_blank" class="sNBLink">Resume</a><br/>
+            <a href="tel:+917023892505" class="sNBLink">Contact</a>    
         </div>
     </nav>
     <!-- nav bar ending -->
 
     <!-- Introduction goes here  -->
-    <main class="section intro-container">
-        <div class="intro-text">
+    <main class="section introSection" id="Introduction">
+        <div class="introText">
             <div class="name">
                 <h1>
                     Hello👋<br />
@@ -78,20 +81,20 @@
     <!-- End of introduction -->
 
     <!-- Quote for the life -->
-    <section class="quote section">
-        <div class="quote-container">
+    <section class="quoteSection section">
+        <div class="quoteContainer">
             <h1>
                 “If you want to shine like a sun, first burn like a sun.”
             </h1>
-            <p class="quote-author">- APJ Abdul Kalam</p>
+            <p class="quoteAuthor">- APJ Abdul Kalam</p>
         </div>
     </section>
     <!-- Quote section end -->
 
     <!-- About me start -->
-    <section id="about" class="about-me section">
-        <div class="heading"><h1>About me</h1></div>
-        <div class="about-me-text">
+    <section id="about" class=" section aboutMeSection">
+        <div class="aboutMeHeading"><h1>About me</h1></div>
+        <div class="aboutMe">
             <p>
                 <span style="font-size: 2em;">H</span>ey there👋, I am Deepak Saini,<br> 
                 Data Science and Artificial Intelligence enthusiast
@@ -108,24 +111,21 @@
                 Come join me in this digital odyssey💫 as I continue to unravel the enigma of AI and Data Science. Let's script the future together🌍✨.
             </p>
         </div>
-        <!-- <div class="about-me-container">
-            
-        </div> -->
     </section>
     <!-- End of About me -->
 
     <!-- Starting of Projects  -->
-    <section id="projects" class="section My-projects">
-        <div class="projects-header header">
+    <section id="projects" class="section projectSection">
+        <div class="projectsHeader header">
             <h1>Projects</h1>
         </div>
-        <div class="project-cards">
-            <div class="projects-card">
+        <div class="projectCardsSection">
+            <div class="pCards pCSection1">
                 <div class="project1 card">
                     <img src="/images/helmet_project.png" alt="Helmets image" loading="lazy"/>
                     <h1>Helmet Detection using YOLO</h1>
                     <hr>
-                    <p>
+                    <p class="pDescription">
                         <ul>
                             <li>
                                 Created a web application for helmet detection,
@@ -148,7 +148,7 @@
                     <img src="/images/text-project.png" alt="" loading="lazy"/>
                     <h1>Text Summarizer using HuggingFace</h1>
                     <hr>
-                    <p>
+                    <p class="pDescription">
                         <ul>
                             <li>
                                 Built a wep application for summarizing a text. 
@@ -167,7 +167,7 @@
                     </button>
                 </div>
             </div>
-            <div class="projects-card projects-section2">
+            <div class="pCards pCSection2">
                 <div class="project3 card">
                     <img
                         src="/images/dogs_project.png"
@@ -176,7 +176,7 @@
                     />
                     <h1>Dogs Breed Classification using RESNET50</h1>
                     <hr>
-                    <p>
+                    <p class="pDescription">
                         <ul>
                             <li>
                                 Created a web application for classifying dog’s breed using Transfer Learning technique of deep learning and RESNET50 model.    
@@ -197,7 +197,7 @@
                     loading="lazy"/>
                     <h1>Mushroom Classification System</h1>
                     <hr >
-                    <p>
+                    <p class="pDescription">
                         <ul>
                             <li>
                                 Created a web application for mushroom classification whether it’s edible or not using Machine Learning algorithms.   
@@ -215,7 +215,7 @@
                 </div>
             </div>
         </div>
-        <div class="all-projects">
+        <div class="allProjects">
             <a href="https://github.com/176deepak" target="_blank"
                 >See all projects</a
             >
@@ -224,40 +224,37 @@
     <!-- End of Projects -->
 
     <!-- Starting of What I Know -->
-    <section class="what-i-know section">
-        <div class="what-i-know-container">
-            <div class="what-i-know-header">
-                <h1>What I Know</h1>
-            </div>
-            <div class="what-i-know-cards">
-                <div class="what-i-know-card skill1"><p>Python</p></div>
-                <div class="what-i-know-card skill2"><p>Tkinter</p></div>
-                <div class="what-i-know-card skill3"><p>Flask</p></div>
-                <div class="what-i-know-card skill4"><p>Matplotlib</p></div>
-                <div class="what-i-know-card skill5"><p>Machine learning</p></div>
-                <div class="what-i-know-card skill6"><p>Deep Learning</p></div>
-                <div class="what-i-know-card skill7"><p>Tensorflow</p></div>
-                <div class="what-i-know-card skill8"><p>Git</p></div>
-                <div class="what-i-know-card skill9"><p>PowerBI</p></div>
-                <div class="what-i-know-card skill10"><p>Github</p></div>
-                <div class="what-i-know-card skill11"><p>Google Colab</p></div>
-            </div>
+    <section class="section skillsSection">
+        <div class="skillsSectionHeader">
+            <h1>What I Know</h1>
+        </div>
+        <div class="skillsCards">
+            <div class="skillCard skill1"><p>Python</p></div>
+            <div class="skillCard skill2"><p>Tkinter</p></div>
+            <div class="skillCard skill3"><p>Flask</p></div>
+            <div class="skillCard skill4"><p>Matplotlib</p></div>
+            <div class="skillCard skill5"><p>Machine learning</p></div>
+            <div class="skillCard skill6"><p>Deep Learning</p></div>
+            <div class="skillCard skill7"><p>Tensorflow</p></div>
+            <div class="skillCard skill8"><p>Git</p></div>
+            <div class="skillCard skill9"><p>PowerBI</p></div>
+            <div class="skillCard skill10"><p>Github</p></div>
+            <div class="skillCard skill11"><p>Google Colab</p></div>
         </div>
     </section>
-
     <!-- Ending of What I Know -->
 
     <!-- Footer -->
     <!-- contact me -->
     <footer class="section footer">
-        <section class="contact-me">
-            <div class="contact-container">
-                <div class="contact-header">
+        <section class="contactMeSection">
+            <div class="contactMe">
+                <div class="contactHeader">
                     <h1>
                         let's cook amazing stuffs for community
                     </h1>
                 </div>
-                <div class="contact-links">
+                <div class="contactLinks">
                     <div class="media">
                         <a href="mailto:deepak170602@gmail.com" target="_blank"><img src="/images/mail.png" alt=""></a>
                     </div>
@@ -279,9 +276,9 @@
                 </div>
             </div>
         </section>
-        <section class="copyright">
+        <section class="copyrightSection">
             <hr>
-            <div class="copyright-text">
+            <div class="copyrightText">
                 <span>Copyright © 2023 Deepak Saini - All Rights Reserved</span>
             </div>
         </section>

@@ -1,5 +1,5 @@
 /* Styling for big screens: Laptops and Desktops */
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1080px) {
     nav {
         position: fixed;
         top: 0;
@@ -313,6 +313,11 @@
     .copyright-text {
         text-align: center;
     }
-}
-
+} */
 /* end */
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Libre+Franklin:wght@300&family=Lora&family=Playball&display=swap'); */
+
+/* onmouseover="this.style.color='white';"
+                onmouseout="this.style.color='black';" */

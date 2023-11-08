@@ -1,17 +1,18 @@
 alert("Under Construction.....")
 
 function myFunction() {
-  var a = document.getElementById("smallNav");
-  if (a.className === "small-navbar") {
+  var a = document.getElementById("myNavBar");
+  if (a.className === "smallNavbar") {
     a.className += " on";
   } else {
-    a.className = "small-navbar";
+    a.className = "smallNavbar";
   };
-
-  var x = document.getElementById("myNavBar");
-  if (x.className === "responsive-links") {
-    x.className += " on";
-  } else {
-    x.className = "responsive-links";
-  }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const div1 = document.getElementById('topNavBar');
+  const div2 = document.getElementById('Introduction');
+  const div1height = div1.offsetHeight;
+  const marginTopValue = div1height + 'px';
+  div2.style.marginTop = marginTopValue;
+});
