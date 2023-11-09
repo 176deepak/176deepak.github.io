@@ -1,120 +1,102 @@
 /* Styling for big screens: Laptops and Desktops */
-/* @media only screen and (min-width: 1080px) {
-    nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 10px 20px;
-        background-color: rgb(226, 226, 226);
-        overflow: hidden;
-    }
-
-    .responsive-link{
+@media only screen and (min-width: 993px){
+    .smallNavbar{
         display: none;
     }
 
-    .logo {
-        text-align: left;
+    .sNBhamBurger{
+        display: none;
     }
 
-    .nav-tabs {
+    .navBar{
+        width: 100%;
+        background-color: rgba(226, 226, 226);
+        padding: 1.5% 2%;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+    }
+
+    .logo span{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .largeNavBar{
+        display: grid;
+        grid-template-columns: 9fr 2fr;
+    }
+
+    .largeTabsList{
+        display: flex;
         text-align: center;
+        justify-content: center;
     }
 
+    .navTabLink{
+        width: fit-content;
+        list-style: none;
+        margin: 0 3%;
+    }
 
-    .nav-contact {
+    .navTabLink a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.2em;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .navTabLink a:hover{
+        border-bottom: 5px solid transparent;
+        transition: border-bottom 2s ease-in-out;
+    }
+
+    .contactButton{
         text-align: end;
     }
 
-    .tabs-list {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        height: 100%;
-        align-items: center;
-    }
-
-    .nav-tab-link {
-        list-style: none;
-        text-align: center;
-    }
-
-    .nav-tab-link a {
+    .contactButton a{
         text-decoration: none;
         color: black;
-        font-size: 1.1em;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        border-bottom: 2px solid transparent;
-        transition: border-bottom 0.3s;
+        font-size: 1.2em;
+        font-family: 'Nunito', sans-serif;
+        border: 1.5px solid black;
+        border-radius: 10px;
+        padding: 5px;
     }
 
-    .nav-contact {
-        position: relative;
-    }
-
-    .contact-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0;
-        padding: 8px 10px;
-        border: 1px solid black;
-        border-radius: 20px;
-        width: max-content;
-    }
-
-    .contact-button a {
-        text-decoration: none;
-        color: black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .logo span {
-        font-size: 2em;
-    }
-
-    .contact-button:hover {
+    .contactButton a:hover{
         background-color: black;
-    }
-
-    .nav-tab-link a:hover {
-        border-bottom: 2px solid black;
-    }
-
-    nav .icon {
-        display: none;
+        color: white;
     }
 
 
-    .intro-container {
-        height: 100vh;
+
+    .introSection{
         background-image: url(/images/intro_bg.png);
-        background-size: cover;
         background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
-        margin-top: 56px;
+        height: 650px;
     }
 
-    .intro-text {
-        padding: 25vh 10vw;
+    .introText{
+        padding-left: 7%;
+        padding-top: 22vh;
+        color: aliceblue;
     }
 
-    .name h1 {
-        font-size: 10vh;
-        color: azure;
-        font-family: 'Dosis', sans-serif;
+    .name h1{
+        font-family: 'Montserrat', sans-serif;
         font-size: 5em;
-    }
-
-    .interest {
-        color: azure;
     }
 
     .typewriter {
         margin-top: 10px;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        font-family: 'Playfair Display', serif;
         white-space: nowrap;
         overflow: hidden;
         border-right: 2px solid #333;
@@ -127,45 +109,21 @@
         }
 
         to {
-            width: 20%;
+            width: 30%;
         }
     }
 
-    .about-me {
-        padding: 7vh 5vw;
-        background-color: #c5c2c2;
-    }
-
-    .heading {
-        margin: 3vh 0;
-    }
-
-    .heading h1 {
-        font-family: 'Lora', serif;
-        font-size: 2.5em;
-    }
-
-    .about-me-text p {
-        text-align: justify;
-        font-family: 'Libre Franklin', sans-serif;
-        line-height: 1.5;
-    }
-
-    .quote {
+    .quoteSection {
         padding: 10vh 5vw;
         background-color: #efefef;
         text-align: center;
     }
 
-    .quote-container {
-        margin: 0 auto;
-    }
-
-    .quote h1 {
-        font-size: 3em;
-        font-family: 'Playball', cursive;
+    .quoteContainer h1 {
         filter: drop-shadow(0 0 10px #ff6f00);
         animation: glow 2s alternate infinite;
+        font-family: 'Marck Script', cursive;
+        font-size: 4em;
     }
 
     @keyframes glow {
@@ -178,127 +136,175 @@
         }
     }
 
-    .quote-author {
+    .quoteAuthor {
         margin-top: 3%;
         font-style: italic;
     }
 
-    .My-projects {
+    .aboutMeSection {
         padding: 7vh 5vw;
+        background-color: #c5c2c2;
     }
 
-    .projects-header {
-        font-family: 'Lora', serif;
-        font-size: 1.8em;
+    .aboutMeHeading {
+        margin-bottom: 2vh;;
     }
 
-    .projects-card {
+    .aboutMeHeading h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5em;
+    }
+
+    .aboutMe p {
+        text-align: justify;
+        font-family: 'Libre Franklin', sans-serif;
+        line-height: 1.5;
+        font-size: 1.1em;
+    }
+
+    .projectSection{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectsHeader{
+        margin-bottom: 2vh;
+    }
+
+    .projectsHeader h1{
+        font-size: 2.5em;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .projectCardsSection{
         display: grid;
-        grid-template-columns: 35% 35%;
-        padding: 3vw;
-        justify-content: space-evenly;
+        grid-template-columns: auto;
+        margin: 2vh 5%;
     }
 
-    .card {
+    .pCards{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 5%;
+    }
+
+    .card{
         border: 1.5px solid black;
         border-radius: 10px;
-        padding: 2%;
+        padding: 1.5%;
+        margin: 0 5%
     }
 
-    .card h1 {
-        font-family: 'Lora', serif;
-        margin-bottom: 5px;
+    .project2{
+        margin-bottom: 0;
     }
 
-    .card li {
-        text-align: justify;
-        list-style: none;
-        line-height: 1.5;
-        font-family: 'Libre Franklin', sans-serif;
+    .card h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5em;
     }
 
-    .card img {
+    .card img{
         width: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
 
+    .card p{
+        margin-top: 1.5%;
+        font-size: 1.1em;
+    }
+
+    .card li{
+        list-style: none;
+        line-height: 1.5;
+        text-align: justify;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
     .card button {
-        padding: 5px;
-        margin-top: 2vh;
-        background-color: black;
-        border-radius: 20px;
+        padding: 7px;
+        margin-top: 5%;
+        background-color: white;
+        border: 1.5px solid black;
+        border-radius: 7px;
+
     }
 
     .card button:hover {
-        background-color: white;
+        background-color: black;
     }
 
     .card a {
         text-decoration: none;
-        color: azure;
+        color: black;
     }
 
     .card a:hover {
-        color: black;
+        color: white;
     }
 
-    .all-projects {
+    .allProjects{
         text-align: center;
-        margin: 5vh 0;
     }
 
-    .all-projects a {
+    .allProjects a{
         border: 1.5px solid black;
-        padding: 8px;
+        border-radius: 7px;
+        padding: 7px;
         text-decoration: none;
         color: black;
-        border-radius: 20px;
     }
 
-    .all-projects a:hover {
+    .allProjects a:hover{
         background-color: black;
-        color: azure;
+        color: white;
     }
 
-    .what-i-know {
-        padding: 7vh 5vw;
+    .skillsSection{
         background-color: #efefef;
+        width: 100%;
     }
 
-    .what-i-know-cards {
-        display: flex;
-        justify-content: space-evenly;
+    .skillsSectionHeader{
+        margin-bottom: 2vh;
     }
 
-    .what-i-know-header {
-        font-family: 'Lora', serif;
-        font-size: 1.6em;
-        margin-bottom: 5vh;
+    .skillsSectionHeader h1{
+        font-size: 2.5em;
+        font-family: 'Playfair Display', serif;
     }
 
-    .what-i-know-card {
-        padding: 10px;
+    .skillsCards{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .skillCard{
+        width: 100%;
+        margin: 5%;
+    }
+
+    .skillCard p{
+        width: fit-content;
+        padding: 4%;
         border: 1.5px solid black;
-        border-radius: 20px;
+        border-radius: 7px;
+        font-family: 'Libre Franklin', sans-serif;
     }
 
-    .contact-container {
+    .contactMeSection {
         text-align: center;
-        height: 35vh;
+        height: 50vh;
+        padding-top: 4vh;
     }
 
-    .contact-me {
-        margin: 0 auto;
-        padding: 7vh 5vw;
+    .contactHeader h1 {
+        font-size: 3.5em;
+        font-family: 'Marck Script', cursive;
     }
 
-    .contact-header h1 {
-        font-size: 3em;
-        font-family: 'Playball', cursive;
-    }
-
-    .contact-links {
+    .contactLinks {
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
         justify-content: space-evenly;
@@ -307,17 +313,13 @@
     }
 
     .media img {
-        width: 35px;
+        width: 80%;
     }
 
-    .copyright-text {
+    .copyrightText {
         text-align: center;
     }
-} */
+}
 /* end */
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Libre+Franklin:wght@300&family=Lora&family=Playball&display=swap'); */
-
 /* onmouseover="this.style.color='white';"
                 onmouseout="this.style.color='black';" */
