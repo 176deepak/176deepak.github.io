@@ -155,6 +155,8 @@ a{
     height: 50vh;
     padding: 5%;
     text-align: center;
+    background-color: #000000;
+    color: #2867c0;
 }
 
 .contact-form form{
@@ -163,11 +165,22 @@ a{
     flex-direction: column;
 }
 
-form input, textarea, button{
-    margin-bottom: 2%;
+form input, textarea{
+    margin-bottom: 3%;
     padding: 10px;
+    background-color: #1E2225;
+    border: none;
+    color: aliceblue;
 }
 
 form button{
-    background-color: rgb(102, 102, 235);
+    margin-bottom: 2%;
+    background-color: #2867c0;
+    width: max-content;
+    border: none;
+    /* border-radius: 1em; */
+    padding: 3%;
+    font-size: 1em;
+    color: aliceblue;
+    font-weight: bold;
 }
