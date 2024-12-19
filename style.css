@@ -84,7 +84,80 @@ a{
     background-color: rgba(204, 204, 204, 0.7)
 }
 
-@media (max-width: 700px) {
+/* Intro Section */
+#intro-container {
+    background-image: url('images/intro-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.intro-line{
+    font-size: 2em;
+    color: rgb(30, 34, 37);
+}
+
+#contact-container{
+    /* height: 50vh; */
+    padding: 5%;
+    text-align: center;
+    background-color: #000000;
+    color: #2867c0;
+}
+
+.contact-line{
+    font-size: 1.2em;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input, textarea{
+    margin-bottom: 3%;
+    padding: 10px;
+    background-color: #1E2225;
+    border: none;
+    color: aliceblue;
+}
+
+form button{
+    margin-bottom: 2%;
+    background-color: #2867c0;
+    width: max-content;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    font-size: 1em;
+    color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+form button:hover{
+    cursor: pointer;
+}
+
+.link .fa.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
     .menu {
         display: none;
         flex-direction: column;
@@ -125,62 +198,24 @@ a{
         transform: rotate(-45deg);
         top: 0;
     }
+
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form{
+        padding-top: 5%;
+    }
+
+    .contact-links{
+        display: flex;
+        text-align: center;
+        padding: 5% 25%;
+        justify-content: space-evenly;
+    }
 }
 
-/* Intro Section */
-#intro-container {
-    background-image: url('images/intro-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#intro{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    align-content: center;
-}
-
-.intro-line{
-    font-size: 2em;
-    color: rgb(30, 34, 37);
-}
-
-#contact-container{
-    height: 50vh;
-    padding: 5%;
-    text-align: center;
-    background-color: #000000;
-    color: #2867c0;
-}
-
-.contact-form form{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-}
-
-form input, textarea{
-    margin-bottom: 3%;
-    padding: 10px;
-    background-color: #1E2225;
-    border: none;
-    color: aliceblue;
-}
-
-form button{
-    margin-bottom: 2%;
-    background-color: #2867c0;
-    width: max-content;
-    border: none;
-    /* border-radius: 1em; */
-    padding: 3%;
-    font-size: 1em;
-    color: aliceblue;
-    font-weight: bold;
+@media (max-width: 768px)  {
+    
 }
