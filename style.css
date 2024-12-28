@@ -167,22 +167,49 @@ form button:hover{
 }
 
 #about-section{
-    padding: 5%;
+    margin: 3%;
+    padding: 2%;
+    background-color: rgb(10, 11, 11);
+    border-radius: 10px;
 }
 
 .about-header{
     padding-bottom: 2%;
+    color: aliceblue;
+    font-size: 1.8em;
 }
 
 .about-container{
     display: grid;
     grid-template-columns: 60% 40%;
+    color: rgb(39, 39, 129);
+    font-size: 1em;
+    text-align: justify;
+    line-height: 150%;
+    align-items: center;
+}
+
+.sub-text{
+    font-size: 2em;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+.about-text{
+    color: aliceblue;
+    font-size: 1.3rem;
+    padding-top: 1%;
+    line-height: 1.5; 
 }
 
 .about-img img{
     max-width:80%;
     max-height:100%;    
     float: right;
+    border-radius: 10px;
 }
 
 #work-section{
@@ -213,9 +240,9 @@ form button:hover{
 }
 
 .text.tagline {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    color: #333;
+    color: rgb(30, 34, 37);
     text-align: center;
     margin-top: 20px;
 }
@@ -336,6 +363,10 @@ form button:hover{
 
     .link .fa.mail{
         color: rgb(39, 39, 129);
+    }
+
+    .about-img{
+        display: none;
     }
 }
 
