@@ -166,6 +166,104 @@ form button:hover{
     padding-top: 2%;
 }
 
+#about-section{
+    padding: 5%;
+}
+
+.about-header{
+    padding-bottom: 2%;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.about-img img{
+    max-width:80%;
+    max-height:100%;    
+    float: right;
+}
+
+#work-section{
+    padding: 5%;
+}
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.skills-slider {
+    display: flex;
+    animation: slide 15s linear infinite;
+}
+
+.skills-slider img {
+    width: fit-content;
+    height: 150px;
+    margin: 0 50px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text.tagline {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text.tagline h3 {
+    display: inline;
+    border-right: 2px solid #333;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(12, end), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 10ch;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: #333;
+    }
+}
+
+@keyframes changeText {
+    0%, 50% {
+        content: "AI Engineer";
+    }
+    60%, 100% {
+        content: "AI Student";
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 @media (max-width: 768px) {
     .menu {
         display: none;
