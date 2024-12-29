@@ -50,7 +50,7 @@
     
     .about-container{
         display: grid;
-        grid-template-rows: 1fr 1fr; 
+        grid-template-rows: auto auto; 
         grid-template-columns: 1fr;
         grid-template-areas: 
             "about-img"
@@ -61,7 +61,7 @@
     }
 
     .description {
-        padding-top: 5%;
+        padding-top: 10%;
         grid-area: description; /* Assign this div to the 'description' area */
     }
     
@@ -76,6 +76,7 @@
 
     .about-img {
         grid-area: about-img; /* Assign this div to the 'about-img' area */
+        /* padding-top: 5%; */
     }
     
     .sub-text{
@@ -103,6 +104,10 @@
         padding-top: 5%;
     }
 
+    .links{
+        padding-top: 10%;
+    }
+
     .contact-links{
         display: flex;
         text-align: center;
@@ -111,7 +116,7 @@
     }
 
     .link .fa{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .link .fa.whatsapp{

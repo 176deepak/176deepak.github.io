@@ -166,11 +166,12 @@ a{
 
 .about-header{
     color: aliceblue;
+    padding: 5% 0 3% 0;
 }
 
 .about-container{
     color: rgb(39, 39, 129);
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .description{
@@ -205,6 +206,10 @@ a{
     color: #2867c0;
 }
 
+.work-header{
+    padding: 5% 0 3% 0;
+}
+
 .skills-container {
     display: flex;
     align-items: center;
@@ -237,6 +242,10 @@ a{
     color: #2867c0;
     background-color: rgb(10, 11, 11);
     border-radius: 10px;
+}
+
+.contact-line{
+    padding: 5% 0 3% 0;
 }
 
 .contact-form form{
