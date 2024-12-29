@@ -81,7 +81,8 @@ a{
 }
 
 .nav-link:hover{
-    background-color: rgba(204, 204, 204, 0.7)
+    background-color: rgba(204, 204, 204, 0.7);
+    font-weight: bold;
 }
 
 /* Intro Section */
@@ -210,6 +211,10 @@ form button:hover{
     max-height:100%;    
     float: right;
     border-radius: 10px;
+}
+
+.about-img img:last-child {
+    display: none;
 }
 
 #work-section{
@@ -365,9 +370,65 @@ form button:hover{
         color: rgb(39, 39, 129);
     }
 
-    .about-img{
+    .about-header{
+        font-size: 1em;
+    }
+    
+    .about-container{
+        display: grid;
+        grid-template-rows: 1fr 1fr; /* Layout is row-wise */
+        grid-template-columns: 1fr; /* Single column for rows */
+        grid-template-areas: 
+            "about-img" /* Place about-img first */
+            "description"; /* Place description second */
+        gap: 20px; 
+        color: rgb(39, 39, 129);
+        font-size: 1em;
+        /* text-align: justify; */
+        line-height: 150%;
+        align-items: center;
+    }
+
+    .description {
+        grid-area: description; /* Assign this div to the 'description' area */
+    }
+    
+    .about-img img:first-child {
         display: none;
     }
+
+    .about-img img:last-child {
+        display: block;
+        max-width: 100%;
+    }
+
+    .about-img {
+        grid-area: about-img; /* Assign this div to the 'about-img' area */
+    }
+    
+    .sub-text{
+        font-size: 1em;
+        font-family: "Dancing Script", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: xx-large;
+    }
+    
+    .about-text{
+        color: aliceblue;
+        font-size: 1rem;
+        padding-top: 1%;
+        line-height: 1.5; 
+    }
+    /* .about-container{
+        display: grid;
+        grid-template-columns: auto;
+    } */
+
+    /* .about-img{
+        display: none;
+    } */
 }
 
 @media (min-width: 768px)  {
