@@ -1,0 +1,126 @@
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.3);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+    }
+
+    .menu > li {
+        color: rgb(30, 34, 37);
+        padding: 1em;
+        border-bottom: 1px #444;
+        text-align: center;
+    }
+
+    .menu-button-container {
+        display: flex;
+    }
+
+    /* Show Menu when Hamburger is Clicked */
+    #menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    #menu-toggle:checked + .menu-button-container .menu-button {
+        background: transparent;
+    }
+
+    #menu-toggle:checked + .menu-button-container .menu-button::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    #menu-toggle:checked + .menu-button-container .menu-button::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .hidden-div{
+        display: none;
+    }
+
+    .about-header{
+        font-size: 1em;
+    }
+    
+    .about-container{
+        display: grid;
+        grid-template-rows: 1fr 1fr; /* Layout is row-wise */
+        grid-template-columns: 1fr; /* Single column for rows */
+        grid-template-areas: 
+            "about-img" /* Place about-img first */
+            "description"; /* Place description second */
+        gap: 20px; 
+        color: rgb(39, 39, 129);
+        font-size: 1em;
+        /* text-align: justify; */
+        line-height: 150%;
+        align-items: center;
+    }
+
+    .description {
+        grid-area: description; /* Assign this div to the 'description' area */
+    }
+    
+    .about-img img:first-child {
+        display: none;
+    }
+
+    .about-img img:last-child {
+        display: block;
+        max-width: 100%;
+    }
+
+    .about-img {
+        grid-area: about-img; /* Assign this div to the 'about-img' area */
+    }
+    
+    .sub-text{
+        font-size: 1em;
+        font-family: "Dancing Script", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: xx-large;
+    }
+    
+    .about-text{
+        color: aliceblue;
+        font-size: 1rem;
+        padding-top: 1%;
+        line-height: 1.5; 
+    }
+
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form{
+        padding-top: 5%;
+    }
+
+    .contact-links{
+        display: flex;
+        text-align: center;
+        padding: 5% 25%;
+        justify-content: space-evenly;
+    }
+
+    .link .fa{
+        font-size: 30px;
+    }
+
+    .link .fa.whatsapp{
+        color: green;
+    }
+
+    .link .fa.mail{
+        color: rgb(39, 39, 129);
+    }
+}
