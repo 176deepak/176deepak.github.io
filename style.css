@@ -171,8 +171,10 @@ a{
 .about-container{
     color: rgb(39, 39, 129);
     text-align: justify;
+}
+
+.description{
     line-height: 150%;
-    align-items: center;
 }
 
 .sub-text{
@@ -181,6 +183,7 @@ a{
     font-weight: 400;
     font-style: normal;
     font-size: xx-large;
+    color: #2867c0;
 }
 
 .about-text{
@@ -190,7 +193,6 @@ a{
 }
 
 .about-img img{
-    max-height:100%;    
     float: right;
     border-radius: 10px;
 }
@@ -209,6 +211,7 @@ a{
     justify-content: flex-start;
     overflow: hidden;
     position: relative;
+    padding: 10% 0;
 }
 
 .skills-slider {
@@ -291,4 +294,11 @@ form button:hover{
     to {
         transform: translateX(-100%);
     }
+}
+
+footer{
+    text-align: center; 
+    padding: 20px; 
+    color: rgb(52, 52, 52); 
+    font-size: 14px;
 }

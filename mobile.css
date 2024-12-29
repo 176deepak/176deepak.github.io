@@ -50,20 +50,18 @@
     
     .about-container{
         display: grid;
-        grid-template-rows: 1fr 1fr; /* Layout is row-wise */
-        grid-template-columns: 1fr; /* Single column for rows */
+        grid-template-rows: 1fr 1fr; 
+        grid-template-columns: 1fr;
         grid-template-areas: 
-            "about-img" /* Place about-img first */
-            "description"; /* Place description second */
-        gap: 20px; 
+            "about-img"
+            "description";
         color: rgb(39, 39, 129);
         font-size: 1em;
-        /* text-align: justify; */
         line-height: 150%;
-        align-items: center;
     }
 
     .description {
+        padding-top: 5%;
         grid-area: description; /* Assign this div to the 'description' area */
     }
     
@@ -94,10 +92,6 @@
         font-size: 1rem;
         padding-top: 1%;
         line-height: 1.5; 
-    }
-
-    .skills-container{
-        height: 60vh;
     }
 
     .contact-details{

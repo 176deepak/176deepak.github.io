@@ -6,6 +6,7 @@
     .about-container{
         display: grid;
         grid-template-columns: 60% 40%;
+        align-items: center;
     }
     
     .about-text{
@@ -22,10 +23,6 @@
 
     .work-header{
         font-size: 2em;
-    }
-
-    .skills-container{
-        height: 50vh;
     }
 
     .contact-details{
