@@ -200,6 +200,7 @@ a{
     padding: 2%;
     background-color: #141516;
     border-radius: 10px;
+    color: #2867c0;
 }
 
 .skills-container {
@@ -221,7 +222,8 @@ a{
     margin: 0 50px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 8px rgba(150, 150, 150, 0.2);
+    background-color: #000000;
 }
 
 #contact-container{

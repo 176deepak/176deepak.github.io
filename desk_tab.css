@@ -20,6 +20,10 @@
         display: none;
     }
 
+    .work-header{
+        font-size: 2em;
+    }
+
     .skills-container{
         height: 50vh;
     }
@@ -31,6 +35,7 @@
 
     .contact-line{
         padding-right: 45%;
+        font-size: 2em;
     }
 
     .contact-form{

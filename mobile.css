@@ -96,6 +96,10 @@
         line-height: 1.5; 
     }
 
+    .skills-container{
+        height: 60vh;
+    }
+
     .contact-details{
         display: flex;
         flex-direction: column;
