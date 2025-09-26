@@ -1,13 +1,13 @@
 function WorkAreaSection() {
     const skills = [
-        { src: "py.png", alt: "Python" },
-        { src: "sklearn.png", alt: "Scikit-learn" },
-        { src: "tf.png", alt: "TensorFlow" },
-        { src: "pt.png", alt: "PyTorch" },
-        { src: "llm.png", alt: "LLMs" },
-        { src: "flask.png", alt: "Flask" },
-        { src: "fastapi.png", alt: "FastAPI" },
-        { src: "huggingface.png", alt: "HuggingFace" },
+        { src: "https://res.cloudinary.com/de9xwcbm1/image/upload/v1758890776/py_ovf4yv.png", alt: "Python" },
+        { src: "https://res.cloudinary.com/de9xwcbm1/image/upload/v1758890777/sklearn_bir5x1.png", alt: "Scikit-learn" },
+        { src: "https://res.cloudinary.com/de9xwcbm1/image/upload/v1758890777/tf_pw5ffg.png", alt: "TensorFlow" },
+        { src: "https://res.cloudinary.com/de9xwcbm1/image/upload/v1758890775/pt_jn030n.png", alt: "PyTorch" },
+        { src: "https://res.cloudinary.com/de9xwcbm1/image/upload/v1758890774/llm_eui1ue.png", alt: "LLMs" },
+        { src: "https://res.cloudinary.com/de9xwcbm1/image/upload/v1758890778/flask_ukog94.png", alt: "Flask" },
+        { src: "https://res.cloudinary.com/de9xwcbm1/image/upload/v1758890772/fastapi_niia7m.png", alt: "FastAPI" },
+        { src: "https://res.cloudinary.com/de9xwcbm1/image/upload/v1758890773/huggingface_hxg709.png", alt: "HuggingFace" },
     ];
 
     return (

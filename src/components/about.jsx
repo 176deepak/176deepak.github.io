@@ -40,12 +40,12 @@ function AboutSection() {
 
             <div className="md:w-1/3 flex justify-center">
             <img
-                src="about-bg.jpg"
+                src="https://res.cloudinary.com/de9xwcbm1/image/upload/v1758890841/about-bg_zstg4c.jpg"
                 alt="About background"
                 className="hidden md:block rounded-2xl shadow-lg"
             />
             <img
-                src="about-bg-1.jpg"
+                src="https://res.cloudinary.com/de9xwcbm1/image/upload/v1758890843/about-bg-1_gri5mt.jpg"
                 alt="About background mobile"
                 className="block md:hidden rounded-2xl shadow-lg"
             />
