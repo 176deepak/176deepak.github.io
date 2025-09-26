@@ -1,13 +1,13 @@
 function WorkAreaSection() {
     const skills = [
-        { src: "../assets/py.png", alt: "Python" },
-        { src: "../assets/sklearn.png", alt: "Scikit-learn" },
-        { src: "../assets/tf.png", alt: "TensorFlow" },
-        { src: "../assets/pt.png", alt: "PyTorch" },
-        { src: "../assets/llm.png", alt: "LLMs" },
-        { src: "../assets/flask.png", alt: "Flask" },
-        { src: "../assets/fastapi.png", alt: "FastAPI" },
-        { src: "../assets/huggingface.png", alt: "HuggingFace" },
+        { src: "py.png", alt: "Python" },
+        { src: "sklearn.png", alt: "Scikit-learn" },
+        { src: "tf.png", alt: "TensorFlow" },
+        { src: "pt.png", alt: "PyTorch" },
+        { src: "llm.png", alt: "LLMs" },
+        { src: "flask.png", alt: "Flask" },
+        { src: "fastapi.png", alt: "FastAPI" },
+        { src: "huggingface.png", alt: "HuggingFace" },
     ];
 
     return (

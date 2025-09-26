@@ -44,7 +44,7 @@ function IntroSection() {
         <section id="intro-section" className="pb-20">
         <div
             id="intro-container"
-            className="bg-[url(../../assets/intro-bg.jpg)] bg-cover bg-center w-full h-screen flex flex-col items-center justify-center"
+            className="bg-[url(intro-bg.jpg)] bg-cover bg-center w-full h-screen flex flex-col items-center justify-center"
         >
             <div id="intro" className="text-center">
             {/* Static headline */}
