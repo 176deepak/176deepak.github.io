@@ -1,149 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deepak Saini | ML Engineer</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mobile.css" />
-    <link rel="stylesheet" href="desk_tab.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Nav Bar Section -->
-    <section id="nav-section">
-        <div>
-        </div>
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-        </label>
-        <ul class="menu">
-            <li class="nav-link"><a href="#intro-section">Home</a></li>
-            <li class="nav-link"><a href="#about-section">About</a></li>
-            <li class="nav-link"><a href="#work-section">Work Area</a></li>
-            <li class="nav-link"><a href="#contact-section">Contact</a></li>
-        </ul>
-    </section>
-    <!-- Nav Bar Section End -->
-
-    <section id="intro-section">
-        <div id="intro-container">
-            <div id="intro">
-                <div class="intro-line text"><h1>Hello! This is Deepak Saini</h1></div>
-                <div class="text tagline"><h3>AI Engineer</h3></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about-section">
-        <div class="header about-header">
-            <h1 class="text">About Me</h1>
-        </div>
-        <div class="about-container">
-            <div class="description">
-                <span class="sub-text">Hello all!</span>
-                <p class="about-text"> 
-                        I am Deepak Saini, a passionate explorer and student in the dynamic field of Artificial Intelligence and Generative AI. My journey spans from mastering traditional Machine Learning techniques to delving into cutting-edge Generative AI innovations. With a hands-on approach, I've worked on diverse projects, pushing the boundaries of AI applications. <br>
-                        Driven by a vision to make AI accessible and impactful, I'm actively exploring its integration into areas like Android and Web Development. My goal is to craft seamless solutions that deliver the benefits of AI to end-users with unparalleled efficiency and effectiveness. <br>
-                        I am committed to leveraging technology to solve real-world challenges, constantly learning, and staying at the forefront of innovation. Let's connect to create transformative solutions together! 
-                </p>
-            </div>
-            <div class="about-img">
-                <img src="images/about-bg.jpg" alt="">
-                <img src="images/about-bg-1.jpg" alt="">
-            </div>
-        </div>
-
-    </section>
-
-    <section id="work-section">
-        <div class="header work-header"><h1 class="text">Work Area</h1></div>
-        <div class="skills-container">
-            <div class="skills-slider">
-                <img src="images/py.png" alt="Sklearn">
-                <img src="images/sklearn.png" alt="Pytorch">
-                <img src="images/tf.png" alt="TensorFlow">
-                <img src="images/pt.png" alt="NumPy">
-                <img src="images/llm.png" alt="Pandas">
-                <img src="images/js.png" alt="Matplotlib">
-            </div>
-        </div>
-    </section>
-
-    <section id="contact-section">
-        <div id="contact-container">
-            <div class="contact-line">
-                <h1>Contact Me!</h1>
-            </div>
-            <div class="contact-details">
-                <div class="contact-form">
-                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
-
-                        <!-- Replace with your Access Key -->
-                        <input type="hidden" name="access_key" value="78cab654-4403-40da-b796-175a14ce32d3">
-                    
-                        <!-- Form Inputs. Each input must have a name="" attribute -->
-                        <input type="text" name="name" required placeholder="Name...">
-                        <input type="email" name="email" required placeholder="Email...">
-                        <textarea name="message" required placeholder="Message..." rows="5"></textarea>
-                    
-                        <!-- Honeypot Spam Protection -->
-                        <div class="h-captcha" data-captcha="true"></div>
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                    
-                        <!-- Custom Confirmation / Success Page -->
-                        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-                        
-                        <div>
-                            <button type="submit">Submit</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="links">
-                    <div class="text link-header">
-                        <p>You can follow on 👇</p>
-                    </div>
-                    <div class="contact-links">
-                        <div class="link">
-                            <a href="https://wa.me/917023892505?text=Hello!" target="_blank">
-                                <i class="fa whatsapp">&#xf232;</i>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a href="https://www.instagram.com/deepak_s.ai/" target="_blank">
-                                <i class="fa instagram">&#xf16d;</i>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a href="mailto:deepak170602@gmail.com" target="_blank">
-                                <i class="fa material-icons mail">&#xe158;</i>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a href="https://github.com/176deepak" target="_blank">
-                                <i class="fa github">&#xf09b;</i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- <footer>
-        <p>&copy; <span id="year"></span> Deepak Saini. All rights reserved.</p>
-    </footer> -->
-
-    <script src="https://web3forms.com/client/script.js" async defer></script>
-    <script src="script.js"></script>
-</body>
-
+  </head>
+  <body class="bg-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
