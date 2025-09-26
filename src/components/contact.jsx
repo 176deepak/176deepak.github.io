@@ -136,7 +136,6 @@ function ContactSection() {
                 className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E2225] bg-black"
                 ></textarea>
 
-                {/* Captcha */}
                 <div className="w-full">
                 <div
                     className="h-captcha"
