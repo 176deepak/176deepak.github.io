@@ -140,6 +140,7 @@ function ContactSection() {
                 <div
                     className="h-captcha"
                     data-captcha="true"
+                    data-sitekey="your-hcaptcha-site-key"
                     style={{ display: "block", margin: "auto", width: "100%" }}
                 ></div>
                 </div>
